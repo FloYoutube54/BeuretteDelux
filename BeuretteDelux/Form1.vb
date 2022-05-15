@@ -96,6 +96,7 @@ Public Class Form1
                 ListView1.Items.Add(item)
             Next
         Catch ex As UnauthorizedAccessException
+            dlg = New TaskDialog
             Dim restart As New TaskDialogButton("restart", "Redémarrer en administrateur")
             Dim close As New TaskDialogButton("close", "Fermer")
             AddHandler restart.Click, AddressOf restart_Click
@@ -109,11 +110,22 @@ Public Class Form1
             dlg.Icon = TaskDialogStandardIcon.Error
             dlg.Show()
         Catch ex As IOException
+            dlg = New TaskDialog
             dlg.StandardButtons = TaskDialogStandardButtons.Close
             dlg.Caption = "Accès refusé"
             dlg.InstructionText = ex.Message
             dlg.Icon = TaskDialogStandardIcon.Error
             dlg.Show()
         End Try
+    End Sub
+
+    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub ListView1_DoubleClick(sender As Object, e As EventArgs) Handles ListView1.DoubleClick
+        If Directory.Exists(TreeView1.SelectedNode.FullPath & "\" & ListView1.SelectedItems(0).Text) Then
+
+        End If
     End Sub
 End Class

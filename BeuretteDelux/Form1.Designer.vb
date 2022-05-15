@@ -34,19 +34,25 @@ Partial Class Form1
         Me.PropriétésToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripSeparator()
         Me.QuitterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopierVersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MulticopieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.DéplacerVersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MultidéplacementToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.TreeView1 = New System.Windows.Forms.TreeView()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.ImageList2 = New System.Windows.Forms.ImageList(Me.components)
         Me.ImageList3 = New System.Windows.Forms.ImageList(Me.components)
+        Me.ImageList2 = New System.Windows.Forms.ImageList(Me.components)
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FichierToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FichierToolStripMenuItem, Me.CopieToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(660, 24)
@@ -105,6 +111,42 @@ Partial Class Form1
         Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.QuitterToolStripMenuItem.Text = "&Quitter"
         '
+        'CopieToolStripMenuItem
+        '
+        Me.CopieToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CopierVersToolStripMenuItem, Me.MulticopieToolStripMenuItem, Me.ToolStripMenuItem4, Me.DéplacerVersToolStripMenuItem, Me.MultidéplacementToolStripMenuItem})
+        Me.CopieToolStripMenuItem.Name = "CopieToolStripMenuItem"
+        Me.CopieToolStripMenuItem.Size = New System.Drawing.Size(90, 20)
+        Me.CopieToolStripMenuItem.Text = "&Manipulation"
+        '
+        'CopierVersToolStripMenuItem
+        '
+        Me.CopierVersToolStripMenuItem.Name = "CopierVersToolStripMenuItem"
+        Me.CopierVersToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.CopierVersToolStripMenuItem.Text = "&Copier vers..."
+        '
+        'MulticopieToolStripMenuItem
+        '
+        Me.MulticopieToolStripMenuItem.Name = "MulticopieToolStripMenuItem"
+        Me.MulticopieToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.MulticopieToolStripMenuItem.Text = "M&ulti-copie"
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(173, 6)
+        '
+        'DéplacerVersToolStripMenuItem
+        '
+        Me.DéplacerVersToolStripMenuItem.Name = "DéplacerVersToolStripMenuItem"
+        Me.DéplacerVersToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.DéplacerVersToolStripMenuItem.Text = "&Déplacer vers..."
+        '
+        'MultidéplacementToolStripMenuItem
+        '
+        Me.MultidéplacementToolStripMenuItem.Name = "MultidéplacementToolStripMenuItem"
+        Me.MultidéplacementToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.MultidéplacementToolStripMenuItem.Text = "Mu&lti-déplacement"
+        '
         'ToolStrip1
         '
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 24)
@@ -156,19 +198,19 @@ Partial Class Form1
         Me.ListView1.TabIndex = 4
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '
-        'ImageList2
-        '
-        Me.ImageList2.ImageStream = CType(resources.GetObject("ImageList2.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.ImageList2.TransparentColor = System.Drawing.Color.Transparent
-        Me.ImageList2.Images.SetKeyName(0, "Win7_Directory.ico")
-        Me.ImageList2.Images.SetKeyName(1, "Win7_File.ico")
-        '
         'ImageList3
         '
         Me.ImageList3.ImageStream = CType(resources.GetObject("ImageList3.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.ImageList3.TransparentColor = System.Drawing.Color.Transparent
         Me.ImageList3.Images.SetKeyName(0, "Win7_Directory.ico")
         Me.ImageList3.Images.SetKeyName(1, "Win7_File.ico")
+        '
+        'ImageList2
+        '
+        Me.ImageList2.ImageStream = CType(resources.GetObject("ImageList2.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList2.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList2.Images.SetKeyName(0, "Win7_Directory.ico")
+        Me.ImageList2.Images.SetKeyName(1, "Win7_File.ico")
         '
         'Form1
         '
@@ -207,4 +249,10 @@ Partial Class Form1
     Friend WithEvents ImageList1 As ImageList
     Friend WithEvents ImageList3 As ImageList
     Friend WithEvents ImageList2 As ImageList
+    Friend WithEvents CopieToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CopierVersToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MulticopieToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem4 As ToolStripSeparator
+    Friend WithEvents DéplacerVersToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MultidéplacementToolStripMenuItem As ToolStripMenuItem
 End Class
