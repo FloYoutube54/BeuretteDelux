@@ -47,133 +47,112 @@ Partial Class Form1
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.ImageList3 = New System.Windows.Forms.ImageList(Me.components)
         Me.ImageList2 = New System.Windows.Forms.ImageList(Me.components)
+        Me.VérifierLesMAJToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
+        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FichierToolStripMenuItem, Me.CopieToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(660, 24)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FichierToolStripMenuItem
         '
-        Me.FichierToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OuvrirToolStripMenuItem, Me.ToolStripMenuItem1, Me.RenommerToolStripMenuItem, Me.SupprimerToolStripMenuItem, Me.ToolStripMenuItem2, Me.PropriétésToolStripMenuItem, Me.ToolStripMenuItem3, Me.QuitterToolStripMenuItem})
+        resources.ApplyResources(Me.FichierToolStripMenuItem, "FichierToolStripMenuItem")
+        Me.FichierToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OuvrirToolStripMenuItem, Me.ToolStripMenuItem1, Me.RenommerToolStripMenuItem, Me.SupprimerToolStripMenuItem, Me.ToolStripMenuItem2, Me.PropriétésToolStripMenuItem, Me.ToolStripMenuItem3, Me.VérifierLesMAJToolStripMenuItem, Me.QuitterToolStripMenuItem})
         Me.FichierToolStripMenuItem.Name = "FichierToolStripMenuItem"
-        Me.FichierToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
-        Me.FichierToolStripMenuItem.Text = "&Fichier"
         '
         'OuvrirToolStripMenuItem
         '
+        resources.ApplyResources(Me.OuvrirToolStripMenuItem, "OuvrirToolStripMenuItem")
         Me.OuvrirToolStripMenuItem.Name = "OuvrirToolStripMenuItem"
-        Me.OuvrirToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.OuvrirToolStripMenuItem.Text = "&Ouvrir"
         '
         'ToolStripMenuItem1
         '
+        resources.ApplyResources(Me.ToolStripMenuItem1, "ToolStripMenuItem1")
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(130, 6)
         '
         'RenommerToolStripMenuItem
         '
+        resources.ApplyResources(Me.RenommerToolStripMenuItem, "RenommerToolStripMenuItem")
         Me.RenommerToolStripMenuItem.Name = "RenommerToolStripMenuItem"
-        Me.RenommerToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.RenommerToolStripMenuItem.Text = "&Renommer"
         '
         'SupprimerToolStripMenuItem
         '
+        resources.ApplyResources(Me.SupprimerToolStripMenuItem, "SupprimerToolStripMenuItem")
         Me.SupprimerToolStripMenuItem.Name = "SupprimerToolStripMenuItem"
-        Me.SupprimerToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.SupprimerToolStripMenuItem.Text = "&Supprimer"
         '
         'ToolStripMenuItem2
         '
+        resources.ApplyResources(Me.ToolStripMenuItem2, "ToolStripMenuItem2")
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(130, 6)
         '
         'PropriétésToolStripMenuItem
         '
+        resources.ApplyResources(Me.PropriétésToolStripMenuItem, "PropriétésToolStripMenuItem")
         Me.PropriétésToolStripMenuItem.Name = "PropriétésToolStripMenuItem"
-        Me.PropriétésToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.PropriétésToolStripMenuItem.Text = "&Propriétés"
         '
         'ToolStripMenuItem3
         '
+        resources.ApplyResources(Me.ToolStripMenuItem3, "ToolStripMenuItem3")
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(130, 6)
         '
         'QuitterToolStripMenuItem
         '
+        resources.ApplyResources(Me.QuitterToolStripMenuItem, "QuitterToolStripMenuItem")
         Me.QuitterToolStripMenuItem.Name = "QuitterToolStripMenuItem"
-        Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.QuitterToolStripMenuItem.Text = "&Quitter"
         '
         'CopieToolStripMenuItem
         '
+        resources.ApplyResources(Me.CopieToolStripMenuItem, "CopieToolStripMenuItem")
         Me.CopieToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CopierVersToolStripMenuItem, Me.MulticopieToolStripMenuItem, Me.ToolStripMenuItem4, Me.DéplacerVersToolStripMenuItem, Me.MultidéplacementToolStripMenuItem})
         Me.CopieToolStripMenuItem.Name = "CopieToolStripMenuItem"
-        Me.CopieToolStripMenuItem.Size = New System.Drawing.Size(90, 20)
-        Me.CopieToolStripMenuItem.Text = "&Manipulation"
         '
         'CopierVersToolStripMenuItem
         '
+        resources.ApplyResources(Me.CopierVersToolStripMenuItem, "CopierVersToolStripMenuItem")
         Me.CopierVersToolStripMenuItem.Name = "CopierVersToolStripMenuItem"
-        Me.CopierVersToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
-        Me.CopierVersToolStripMenuItem.Text = "&Copier vers..."
         '
         'MulticopieToolStripMenuItem
         '
+        resources.ApplyResources(Me.MulticopieToolStripMenuItem, "MulticopieToolStripMenuItem")
         Me.MulticopieToolStripMenuItem.Name = "MulticopieToolStripMenuItem"
-        Me.MulticopieToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
-        Me.MulticopieToolStripMenuItem.Text = "M&ulti-copie"
         '
         'ToolStripMenuItem4
         '
+        resources.ApplyResources(Me.ToolStripMenuItem4, "ToolStripMenuItem4")
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(173, 6)
         '
         'DéplacerVersToolStripMenuItem
         '
+        resources.ApplyResources(Me.DéplacerVersToolStripMenuItem, "DéplacerVersToolStripMenuItem")
         Me.DéplacerVersToolStripMenuItem.Name = "DéplacerVersToolStripMenuItem"
-        Me.DéplacerVersToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
-        Me.DéplacerVersToolStripMenuItem.Text = "&Déplacer vers..."
         '
         'MultidéplacementToolStripMenuItem
         '
+        resources.ApplyResources(Me.MultidéplacementToolStripMenuItem, "MultidéplacementToolStripMenuItem")
         Me.MultidéplacementToolStripMenuItem.Name = "MultidéplacementToolStripMenuItem"
-        Me.MultidéplacementToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
-        Me.MultidéplacementToolStripMenuItem.Text = "Mu&lti-déplacement"
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 24)
+        resources.ApplyResources(Me.ToolStrip1, "ToolStrip1")
+        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(660, 25)
-        Me.ToolStrip1.TabIndex = 1
-        Me.ToolStrip1.Text = "ToolStrip1"
         '
         'StatusStrip1
         '
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 448)
+        resources.ApplyResources(Me.StatusStrip1, "StatusStrip1")
+        Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(660, 22)
-        Me.StatusStrip1.TabIndex = 2
-        Me.StatusStrip1.Text = "StatusStrip1"
         '
         'TreeView1
         '
+        resources.ApplyResources(Me.TreeView1, "TreeView1")
         Me.TreeView1.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.TreeView1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.TreeView1.ImageIndex = 0
         Me.TreeView1.ImageList = Me.ImageList1
-        Me.TreeView1.Location = New System.Drawing.Point(0, 49)
         Me.TreeView1.Name = "TreeView1"
-        Me.TreeView1.SelectedImageIndex = 1
-        Me.TreeView1.Size = New System.Drawing.Size(173, 399)
-        Me.TreeView1.TabIndex = 3
         '
         'ImageList1
         '
@@ -188,14 +167,11 @@ Partial Class Form1
         '
         'ListView1
         '
-        Me.ListView1.Dock = System.Windows.Forms.DockStyle.Fill
+        resources.ApplyResources(Me.ListView1, "ListView1")
         Me.ListView1.HideSelection = False
         Me.ListView1.LargeImageList = Me.ImageList3
-        Me.ListView1.Location = New System.Drawing.Point(173, 49)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(487, 399)
         Me.ListView1.SmallImageList = Me.ImageList2
-        Me.ListView1.TabIndex = 4
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '
         'ImageList3
@@ -212,11 +188,16 @@ Partial Class Form1
         Me.ImageList2.Images.SetKeyName(0, "Win7_Directory.ico")
         Me.ImageList2.Images.SetKeyName(1, "Win7_File.ico")
         '
+        'VérifierLesMAJToolStripMenuItem
+        '
+        resources.ApplyResources(Me.VérifierLesMAJToolStripMenuItem, "VérifierLesMAJToolStripMenuItem")
+        Me.VérifierLesMAJToolStripMenuItem.Name = "VérifierLesMAJToolStripMenuItem"
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        resources.ApplyResources(Me, "$this")
+        Me.AllowDrop = True
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(660, 470)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.TreeView1)
         Me.Controls.Add(Me.StatusStrip1)
@@ -224,7 +205,6 @@ Partial Class Form1
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
-        Me.Text = "Form1"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -255,4 +235,5 @@ Partial Class Form1
     Friend WithEvents ToolStripMenuItem4 As ToolStripSeparator
     Friend WithEvents DéplacerVersToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MultidéplacementToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents VérifierLesMAJToolStripMenuItem As ToolStripMenuItem
 End Class
